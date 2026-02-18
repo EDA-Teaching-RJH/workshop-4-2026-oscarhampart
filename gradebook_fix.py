@@ -16,14 +16,17 @@ def main():
 
         # Keep asking for score until valid (0-100)
         while True:
-            score_input = int(input("Score: "))
+            try:
+                score_input = int(input("Score: "))
             
-            # Check for valid range
-            if score_input < 0 or score_input > 100:
-                print("Invalid score. Must be 0-100.")
-                continue
-            else:
-                break
+                # Check for valid range
+                if score_input < 0 or score_input > 100:
+                    print("Invalid score. Must be 0-100.")
+                    continue
+                else:
+                    break
+            except ValueError:
+                print("Please enter a valid score.")
         
         scores.append(score_input)
 
