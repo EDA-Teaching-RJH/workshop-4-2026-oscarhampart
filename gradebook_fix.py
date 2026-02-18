@@ -31,7 +31,7 @@ def main():
         scores.append(score_input)
 
     # Print results
-    print("--- Class Summary ---")
+    print("\n--- Class Summary ---")
     
     # Loop through the lists and print pass/fail
     # Pass mark is 40
