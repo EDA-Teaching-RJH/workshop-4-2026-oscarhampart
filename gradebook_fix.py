@@ -37,9 +37,9 @@ def main():
     # Pass mark is 40
     for i in range(len(names)):
         if scores(i) < 40:
-            print("Fail")
+            result = "Fail"
         else:
-            print("Pass")
+            result = "Pass"
         
         print(f"{i + 1}: {names[i]} - {scores[i]} ({result})")
 
